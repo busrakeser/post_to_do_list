@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="da31d230-cde6-41ab-997a-23e5d48bd0e9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kSQWFjkhapErexxMla2bQK7k47" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\busra\OneDrive\Masaüstü\PostToDoList\assets" />
+      <recent name="C:\Users\busra\OneDrive\Masaüstü\PostToDoList\assets\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\busra\OneDrive\Masaüstü\PostToDoList\assets\js" />
+      <recent name="C:\Users\busra\OneDrive\Masaüstü\PostToDoList\assets\css" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da31d230-cde6-41ab-997a-23e5d48bd0e9" name="Default Changelist" comment="" />
+      <created>1605691542843</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605691542843</updated>
+      <workItem from="1605691543962" duration="24053000" />
+      <workItem from="1605809460865" duration="296000" />
+      <workItem from="1605810349792" duration="733000" />
+      <workItem from="1605814918474" duration="1934000" />
+      <workItem from="1605863854951" duration="35805000" />
+      <workItem from="1606252193793" duration="23555000" />
+      <workItem from="1606297367702" duration="23025000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="618" y="45" key="#Inspections" timestamp="1605868867596">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="618" y="45" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1605868867596" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605871418617">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1440.246.1440.860@0.0.1366.728" timestamp="1605703510198" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1605871418617" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1606318743995">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1606318743995" />
+    <state x="346" y="49" key="search.everywhere.popup" timestamp="1606276449248">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1606276449248" />
+  </component>
+</project>

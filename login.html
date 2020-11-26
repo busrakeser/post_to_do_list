@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
+
+</head>
+<body>
+<nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand text-white" href="#">
+        <h2>Login</h2>
+    </a>
+</nav>
+
+<div class="wrapper">
+    <div class="container">
+        <div class="row justify-content-center vh-100">
+            <div class="col-md-6 align-self-center">
+                <div class="card-header mt-5">
+                    <h2>
+                        Giriş Yap
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <form>
+
+                        <div class="form-group">
+                            <label for="inputMail">Mail Adresiniz</label>
+                            <input type="email" class="form-control" id="inputMail" placeholder="Mail adresi giriniz...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputPassword">Şifreniz</label>
+                            <input type="password" class="form-control" id="inputPassword" autocomplete="on" placeholder="Şifre giriniz...">
+                        </div>
+                        <button type="button" id="login" class="btn btn-success btn-block col-md-12">Giriş Yap</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+</script>
+
+<script src="assets/js/jquery-3.5.1.js"></script>
+<script src="assets/bootstrap/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+<!--<script src="http://www.google.com/recaptcha/api.js" async defer></script>-->
+<script src="assets/js/record.js"></script>
+<script src="assets/js/login.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function (){
+
+        var email=$("#inputMail");
+        var password=$("#inputPassword");
+        var btnGiris=$("#login");
+        var url=" http://egitim-api.sercanozen.com.tr";
+
+        btnGiris.click(function () {
+            if (email.val().trim() == '') {
+                Swal.fire({
+                    icon: 'info',
+                    title: 'Uyarı',
+                    text: 'Lütfen Email Adresinizi Giriniz..',
+                    confirmButtonText: 'Tamam',
+                    confirmButtonColor: '#56b545'
+
+                });
+            }
+            else if (!emailControl(email.val().trim())) {
+                Swal.fire({
+                    icon: 'info',
+                    title: 'Uyarı',
+                    text: 'Lütfen Geçerli Email Adresi Giriniz..',
+                    confirmButtonText: 'Tamam',
+                    confirmButtonColor: '#56b545'
+
+                });
+            }
+            else if (password.val().trim() == '') {
+                Swal.fire({
+                    icon: 'info',
+                    title: 'Uyarı',
+                    text: 'Lütfen Şifrenizi Giriniz..',
+                    confirmButtonText: 'Tamam',
+                    confirmButtonColor: '#56b545'
+
+                });
+            }
+            else{
+                $.ajax({
+                    url: url + '/api/login',
+                    method: 'POST',
+                    data: {
+                        email: email.val(),
+                        password: password.val()
+                    },
+                    async: false,
+                    success:function (response, status){
+                        var token = response.success.token;
+                        var now=new Date();
+                        sessionStorage.setItem("token", token);
+                        sessionStorage.setItem("time", now);
+                        let lastlogin= sessionStorage.getItem("time");
+                        let date=new Date(lastlogin);
+                        window.location.href="ToDoList.html";
+                    }
+                });
+            }
+            function emailControl(email){
+                var regex= /^([a-zA-Z0-9_.+])+\@(([a-zA-Z0-9])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                return regex.test(email);
+            }
+
+        });
+    })
+
+
+</script>
+</body>
+</html>
